@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*******************************
+  基本設定
+*******************************/
+
+/*------------------------------
+  CSSリセット
+------------------------------*/
+
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, table, tr, th, td, form {
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+}
+.serif {
+	font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HiraMinProN-W3", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+@media all and (-ms-high-contrast:none) {
+	body {
+		font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+	}
+	.serif {
+		font-family: "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	empty-cells: show;
+}
+th, td {
+	text-align: left;
+	vertical-align: top;
+}li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+/*------------------------------
+  utility
+------------------------------*/
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.black-shadow {
+	color: #000;
+	text-shadow: 0 0 1px #fff,  0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #fff;
+}
+.white-shadow {
+	color: #fff;
+	text-shadow: 0 0 1px #000,  0 0 2px #000, 0 0 3px #000, 0 0 4px #000, 0 0 5px #000;
+}
+.imgReplace {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 1px;
+}
+.indent {
+	padding-left: 1em;
+	text-align: left;
+	text-indent: -1em;
+}
